@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Golf Instruction with David Saunders</title>
+	
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#meet">Meet The Pro</a></li>
+					<li><a href="#lessons">Lessons</a></li>
+					<li><a href="#tips">Golf Tips</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<%= yield %>
+	<footer>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<p align="center">Golf Instruction with David Saunders</br>Gaithersburg, MD</br>Phone: 240.461.7563</br>Email: DSaunders@golftec.com</p>
+			</div>
+			<div class="col-md-4">
+				<p align="right"><a href="http://www.facebook.com/?ref=logo#!/pages/Springfield-VA/Golf-Instruction-with-David-Saunders/111882338864704?ref=ts" target="_blank">Find Me on Facebook<img src="images/facebook_64.png" alt="facebook" border="0" height="32" width="32" /></a></p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
