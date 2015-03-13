@@ -17,17 +17,38 @@ h1 {
 
 }
 h2 {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Montserrat', serif;
 }
 h3 {
 
 }
 p {
-	font-family: Roboto;
+	font-family: 'Pontano Sans';
 	font-size: 1.2em;
 }
-nav {
-	background-color: #358AB8;
+nav li {
+	font-family: 'Pontano Sans';
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+  font-family: 'Pontano Sans';
+  font-size: 1.5em;
+}
+#outside_container { 
+ text-align: center; 
+    background:url(/images/headbg2.jpg) repeat-x #ffffff;	
+}
+.testimonials-name {
+	font-style: bold;
+}
+.slide {
+	background-color: #BFBFBF;
+	padding: 30px;
 }
 footer {
 	background-color: #358AB8;
@@ -37,4 +58,7 @@ footer a {
 }
 footer p {
 	color: #FFFFFF;
+}
+span {
+	font-style: italic;
 }
