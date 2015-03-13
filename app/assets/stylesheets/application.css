@@ -20,7 +20,10 @@ h2 {
 	font-family: 'Montserrat', serif;
 }
 h3 {
-
+	font-family: 'Montserrat', serif;
+}
+h4 {
+	font-family: 'Montserrat', serif;
 }
 p {
 	font-family: 'Pontano Sans';
@@ -38,6 +41,11 @@ nav li {
   text-align: center;
   font-family: 'Pontano Sans';
   font-size: 1.5em;
+}
+.nav .nav-pills {
+	display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 #outside_container { 
  text-align: center; 

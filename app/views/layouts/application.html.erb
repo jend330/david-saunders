@@ -6,11 +6,20 @@
 	<!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:700' rel='stylesheet' type='text/css'>
 
 
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaQNkhjQ_qKtXlqSvAO2Mottj-5ga9qmQ">
+	</script>
+	<script>
+	$(function () {
+		$('#Google').tooltip();
+	});
+	</script>
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -19,17 +28,10 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script> <!-- 16 KB -->
-	<!-- jQuery library (served from Google) -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<!-- bxSlider Javascript file -->
-	<script src="/js/jquery.bxslider.min.js"></script>
-	<!-- bxSlider CSS file -->
-	<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
-
 
 </head>
 <body>
-	<div id="outside_container"><img src="/images/head18nonav.jpg"></div>
+	<div id="outside_container"><img src="/images/head18nonav.jpg" class="img-responsive"></div>
 	<nav class="nav navbar navbar-default">
 		<div class="container-fluid">
 			
@@ -46,11 +48,11 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-					<li><a href="#meet">Meet The Pro</a></li>
-					<li><a href="#lessons">Lessons</a></li>
-					<li><a href="#tips">Golf Tips</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+					<li><a href="home/meet">Meet The Pro</a></li>
+					<li><a href="home/lessons">Lessons</a></li>
+					<li><a href="home/tips">Golf Tips</a></li>
+					<li><a href="home/contact">Contact</a></li>
 				</ul>
 				
 

@@ -1,2 +1,49 @@
-<h1>Home#contact</h1>
-<p>Find me in app/views/home/contact.html.erb</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<h2>Contact David</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+			<h2>Contact David</h2>
+			<p>David Saunders, Professional Golf Instructor</p>
+			<p>(240)461-7563</p>
+			<p>DSaunders@golftec.com</p>
+			<p>GolfTEC - Gaithersburg, MD</p>
+			<p>9318 Gaither Road, Suite 225</br>Gaithersburg, MD 20877</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3095.5016781678823!2d-77.19229610000004!3d39.11781399790996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7d2ad692f84e3%3A0x4f6f488814e89e4e!2s9318+Gaither+Rd+%23225%2C+Gaithersburg%2C+MD+20877!5e0!3m2!1sen!2sus!4v1426271684478" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="col-xs-12 col-md-6">
+			<h2>Book a Lesson</h2>
+			<p>Lessons are scheduled by appointment from 10am until 7pm, Monday through Saturday. Submit the form below to book a lesson and I will contact you to confirm.</p>
+		<%= flash[:notice] %>
+		<%= form_tag("/home/thank_you") do %>	
+			<div class="form-group">
+				<%= label_tag :name, "*Name" %>
+				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :email, "*Email Address" %>
+				<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :phone, "Phone No. (optional)" %>
+				<%= text_field_tag :phone, nil, class: "form-control", placeholder: "Enter Phone No." %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :time, "Tell us when you want to come:" %>
+				<%= text_area_tag :time, nil, class: "form-control", placeholder: "Enter Message" %>
+			</div>
+			<div class="form-group">
+				<%= label_tag :message, "Leave any special instructions below:" %>
+				<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
+			</div>
+			<p>Book your lesson NOW!</p>
+		<%= submit_tag "Send", {:style => 'background-color:gray'} %>
+		</div>
+		<% end %>
+
+	</div>
+</div>
+
