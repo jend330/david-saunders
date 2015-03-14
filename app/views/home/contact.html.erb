@@ -19,7 +19,7 @@
 		<div class="col-xs-12 col-md-6">
 			<p>Lessons are scheduled by appointment from 10am until 7pm, Monday through Saturday. Submit the form below to book a lesson and I will contact you to confirm.</p>
 		<%= flash[:notice] %>
-		<%= form_tag("home/thank_you") do %>	
+		<%= form_tag("/home/thank_you") do %>	
 			<div class="form-group">
 				<%= label_tag :name, "*Name" %>
 				<%= text_field_tag :name, nil, class: "form-control", placeholder: "Enter Name" %>
