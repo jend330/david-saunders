@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'home/thank_you'
 
+  get 'home/tour_weekly'
+
   post 'home/thank_you'
 
     root 'home#index'

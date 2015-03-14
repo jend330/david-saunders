@@ -58,6 +58,9 @@ nav li {
 	background-color: #BFBFBF;
 	padding: 30px;
 }
+iframe {
+	margin: 5px;
+}
 footer {
 	background-color: #358AB8;
 }
