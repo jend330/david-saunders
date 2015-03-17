@@ -21,6 +21,6 @@ class HomeController < ApplicationController
     @time = params[:time]
     @message = params[:message]
     ActionMailer::Base.mail(:from => @email,
-      :to => 'DSaunders@golftec.com', :subject => "A new contact form message from #{@name}", :body => @message).deliver
+      :to => 'DSaunders@pga.com', :subject => "A new contact form message from #{@name}", :body => @message).deliver
   end
 end

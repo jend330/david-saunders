@@ -17,20 +17,20 @@ h1 {
 
 }
 h2 {
-	font-family: 'Montserrat', serif;
+	font-family: 'Merriweather', serif;
 }
 h3 {
-	font-family: 'Montserrat', serif;
+	font-family: 'Merriweather', serif;
 }
 h4 {
-	font-family: 'Montserrat', serif;
+	font-family: 'Merriweather', serif;
 }
 p {
-	font-family: 'Pontano Sans';
+	font-family: 'Istok Web', sans-serif;
 	font-size: 1.2em;
 }
 nav li {
-	font-family: 'Pontano Sans';
+	font-family: 'Merriweather';
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -65,9 +65,11 @@ footer {
 	background-color: #358AB8;
 }
 footer a {
+	font-family: Merriweather;
 	color: #FFFFFF;
 }
 footer p {
+	font-family: Merriweather;
 	color: #FFFFFF;
 }
 span {
